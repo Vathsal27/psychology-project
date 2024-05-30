@@ -1,5 +1,4 @@
-// import Replicate from "replicate";
-const Replicate = require('replicate');
+const { GoogleGenerativeAI } = require('@google/generative-ai');
 
 function formatString(text) {
     text = text.replace(/,,/g, ',').replace(/,\n/g, '\n');
@@ -12,7 +11,6 @@ function formatString(text) {
 
 module.exports = {
     modelOutput: async (req, res) => {
-        const { GoogleGenerativeAI } = require('@google/generative-ai');
         const genAI = new GoogleGenerativeAI(process.env.API_KEY);
         const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash"});
         
