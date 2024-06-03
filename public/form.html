@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psychology Form</title>
+</head>
+
+<body>
+    <h1>Patient's Details</h1>
+    <hr>
+    <form id="form" action="/model/gemini" method="post">
+        <div>
+            <h2>Socio Demographic Profile</h2>
+            <div class="form-group">
+                <label for="name">Name: </label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age: </label>
+                <input type="number" name="age" id="age">
+            </div>
+            <br>
+            <div>
+                <!-- <h4>Gender: </h4> -->
+                <label for="male">
+                    <input type="radio" name="gender" id="male" value="male"> Male
+                </label>
+                <label for="female">
+                    <input type="radio" name="gender" id="female" value="female"> Female
+                </label>
+            </div>
+            <br>
+            <div>
+                <label for="marital-status">Marital Status: </label>
+                <input type="text" name="marital-status" id="marital-status">
+            </div>
+            <br>
+            <div>
+                <label for="education">Education: </label>
+                <input type="text" name="education" id="education">
+            </div>
+            <br>
+            <div>
+                <label for="occupation">Occupation: </label>
+                <input type="text" name="occupation" id="occupation">
+            </div>
+            <br>
+            <div>
+                <label for="informant">Details of Informant: </label>
+                <input type="text" name="informant" id="informant">
+            </div>
+            <br>
+            <hr>
+        </div>
+        <div>
+            <h2>Chief Complaints</h2>
+            <label for="complaints">Complaints: </label>
+            <textarea name="complaints" id="complaints"></textarea>
+            <br>
+            <hr>
+        </div>
+        <div>
+            <h2>Medical and Surgical Illness History</h2>
+            <label for="medical-history">History: </label>
+            <textarea name="medical-history" id="medical-history"></textarea>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2>Past Psychiatric History</h2>
+            <label for="psychiatric-history">Psychiatric History: </label>
+            <textarea name="psychiatric-history" id="psychiatric-history"></textarea>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2>Family History</h2>
+            <label for="family-history">Family History: </label>
+            <textarea name="family-history" id="family-history"></textarea>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2>Personal History</h2>
+            <label for="personal-history">Personal History: </label>
+            <textarea name="personal-history" id="personal-history"></textarea>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2>Academic History</h2>
+            <label for="academic-history">Academic History: </label>
+            <textarea name="academic-history" id="academic-history"></textarea>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2>Work/Occupation History</h2>
+            <label for="work-history">Work History: </label>
+            <input type="text" name="work-history" id="work-history">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2>Social History</h2>
+            <label for="social-history">Social History: </label>
+            <textarea name="social-history" id="social-history"></textarea>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2>Marital History</h2>
+            <label for="marital-history">Marital History: </label>
+            <textarea name="marital-history" id="marital-history"></textarea>
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2>Psychosexual History</h2>
+            <label for="psychosexual-history">Psychosexual History: </label>
+            <input type="text" name="psychosexual-history" id="psychosexual-history">
+        </div>
+        <br>
+        <hr>
+        <div>
+            <h2>Substance Abuse History</h2>
+            <label for="substance-history">Substance Abuse History: </label>
+            <input type="text" name="substance-history" id="substance-history">
+        </div>
+        <br><hr>
+        <div>
+            <h2>Pre-morbid Personality</h2>
+            <label for="premorbid">Personality: </label>
+            <textarea name="premorbid" id="premorbid"></textarea>
+        </div>
+        <br><hr>
+        <button id="submit-btn" type="submit">Submit</button>
+    </form>
+    <script src="./script.js"></script>
+</body>
+
+</html>
