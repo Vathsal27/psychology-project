@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 
-app.use('/model', model);
+app.use('/', model);
 
 app.listen(port, () => {
     console.log(`Server listening at port ${port}`);
