@@ -5,6 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Psychology Form</title>
+    <style>
+        .large-button {
+            width: 200px; /* Adjust width as needed */
+            height: 50px; /* Adjust height as needed */
+            font-size: 16px; /* Adjust font size as needed */
+            padding: 10px 20px; /* Adjust padding for spacing */
+        }
+    </style>
 </head>
 
 <body>
@@ -129,14 +137,16 @@
             <label for="substance-history">Substance Abuse History: </label>
             <input type="text" name="substance-history" id="substance-history">
         </div>
-        <br><hr>
+        <br>
+        <hr>
         <div>
             <h2>Pre-morbid Personality</h2>
             <label for="premorbid">Personality: </label>
             <textarea name="premorbid" id="premorbid"></textarea>
         </div>
-        <br><hr>
-        <button id="submit-btn" type="submit">Submit</button>
+        <br>
+        <hr>
+        <button id="submit-btn" type="submit" class="large-button">Submit</button>
     </form>
     <script src="./script.js"></script>
 </body>
