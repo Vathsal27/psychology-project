@@ -14,7 +14,7 @@ module.exports = {
         // const devPrompt = "\ngive a provisional diagnosis, differential diagnosis & a final diagnosis with a treatment plan for the above psychological case's json";
         const devPrompt1 = "\ngive a possible provisional diagnosis for the above psychological case's json";
         const devPrompt2 = "\nlist out the differential diagnosis for the above psychological case's json";
-        const devPrompt3 = "\ngive a possible diagnosis with a treatment plan for the above psychological case's json";
+        const devPrompt3 = "\nEvaluate the above case history and complaints and suggest what they disorder they point towards using ICD and DSM and give its codes";
         const devPromptArr = [devPrompt1, devPrompt2, devPrompt3];
         const data = JSON.stringify(req.body);
 
