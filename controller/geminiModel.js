@@ -14,19 +14,21 @@ module.exports = {
         // const devPrompt = "\ngive a provisional diagnosis, differential diagnosis & a final diagnosis with a treatment plan for the above psychological case's json";
         const devPrompt1 = "\ngive a possible provisional diagnosis for the above psychological case's json";
         const devPrompt2 = "\nlist out the differential diagnosis for the above psychological case's json";
-        const devPrompt3 = "\nEvaluate the above case history and complaints and suggest what they disorder they point towards using ICD and DSM and give its codes";
+        const devPrompt3 = "\nEvaluate the above case history and complaints and suggest what disorder they've point towards using ICD and DSM and give its codes";
         const devPromptArr = [devPrompt1, devPrompt2, devPrompt3];
         const data = JSON.stringify(req.body);
 
-        const promises = devPromptArr.map(async (element) => {
-            const result = await model.generateContent(data + element);
-            const response = await result.response;
-            const text = response.text();
-            return formatString(text.replace(/\r?\n/g, ""));
-        });
-
-        const promptRes = await Promise.all(promises);
-
-        return res.status(200).render('../public/result.ejs', { promptResults: promptRes });
+        try {
+            const promises = devPromptArr.map(async (element) => {
+                const result = await model.generateContent(data + element);
+                const response = await result.response;
+                const text = response.text();
+                return formatString(text.replace(/\r?\n/g, ""));
+            });
+            const promptRes = await Promise.all(promises);
+            return res.status(200).render('../public/result.ejs', { promptResults: promptRes });
+        } catch (err) {
+            return res.status(500).json({ 'error': err });
+        }
     }
 };
