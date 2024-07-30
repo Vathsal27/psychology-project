@@ -3,7 +3,7 @@ services:
   backend:
     image: psychology-project
     container_name: backend-server
-    env_file: ".env"
+    env_file: .env
     ports:
-      - "4000:4000"
+      - "${PORT}:${PORT}"
     command: ["node", "server.js"]
