@@ -7,7 +7,7 @@ submitBtn.addEventListener('click', (event) => {
     const formData = new FormData(form);
     const data = Object.fromEntries(formData.entries());
 
-    const url = '/model/submit-data';
+    const url = '/result';
 
     fetch(url, {
         method: 'POST',

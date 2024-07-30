@@ -1,0 +1,435 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <form action="" method="post">
+        <div class="mx-4 px-4">
+            <h1 class="display-5 mb-4 pt-2">Sociodemographic Profile</h1>
+
+            <div class="mb-4 mt-2">
+                <label for="name" class="form-label">Name: </label>
+                <input name="name" type="text" id="name" class="form-control" aria-describedby="passwordHelpBlo"
+                    required>
+                <!-- <div id="passwordHelpBlock" class="form-text">
+                    Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
+                    characters, or emoji.
+                </div> -->
+            </div>
+
+            <div class="mb-4">
+                <label for="father" class="form-label">Father/Husband's Name: </label>
+                <input name="father/husbad-name" type="text" id="father" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <div class="form-outline mb-4" style="width: 22rem;">
+                <label class="form-label" for="typeNumber">Age: </label>
+                <input name="age" type="number" id="typeNumber" class="form-control" placeholder="Enter number" />
+            </div>
+
+            <h2>Sex: </h2>
+            <div class="d-flex flex-row mb-4">
+                <div class="pe-2">
+                    <input type="radio" name="sex" value="male" id=""> Male
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="sex" value="female" id=""> Female
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="sex" value="other" id=""> Not specified
+                </div>
+            </div>
+
+            <div class="mb-4">
+                <label for="education" class="form-label">Education: </label>
+                <input name="education" type="text" id="education" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="occupation" class="form-label">Occupation: </label>
+                <input name="occupation" type="text" id="occupation" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="religion" class="form-label">Religion: </label>
+                <input name="religion" type="text" id="religion" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="Residence" class="form-label">Residence: </label>
+                <input name="Residence" type="text" id="Residence" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="language" class="form-label">Language Spoken: </label>
+                <input name="language" type="text" id="language" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="admission" class="form-label">Type of Admission: </label>
+                <input name="admission" type="text" id="admission" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <h1 class="display-5">Proforma:</h1>
+            <div class="mx-4">
+                <h4>Reliability: </h4>
+                <div class="d-flex flex-row mb-4">
+                    <div class="pe-2">
+                        <input type="radio" name="reliability" value="satisfactory" id=""> Satisfactory
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="reliability" value="unsatisfactory" id=""> Unsatisfactory
+                    </div>
+                </div>
+                <h4>Adequacy: </h4>
+                <div class="d-flex flex-row mb-4">
+                    <div class="pe-2">
+                        <input type="radio" name="adequate" id=""> Adequate
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="inadequate" id=""> Inadequate
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="display-5 mb-4">Presenting complaints(in Verbatum)</h1>
+            <div class="form-floating mb-4">
+                <textarea name="presenting-complaints" class="form-control" placeholder="Leave a comment here"
+                    id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+
+            <h1 class="display-5 mb-4">History of Present Illness</h1>
+            <textarea name="history-of-present-illness" id="floatingTextarea2" class="form-control mb-4"
+                placeholder="•Evolution and sequence of symptoms. Predisposing, Precipitating, Perpetuating factors (Physical, Pharmacological and Psychosocial)&#10;•Limiting and modifying factors&#10;•Problem (interpersonal, somatic, neither)&#10;•Patient's view of responsibility for the problem&#10;•Patient's pervasive and persistent mood&#10;•Impact of present illness on patient's attitude (personal, social, professional (functioning))&#10;•Role functioning and Biological Functioning (sleep, appetite, weight, gastrointestinal issues)&#10;•Activities of Daily living and personal care"></textarea>
+
+            <div class="mb-4">
+                <label for="precipitating-factors" class="form-label">Precipitating Factors: </label>
+                <input name="precipitating-factors" type="text" id="precipitating-factors" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="perpetuating-factors" class="form-label">Perpetuating Factors: </label>
+                <input name="perpetuating-factors" type="text" id="perpetuating-factors" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <div class="mb-4">
+                <label for="predisposing-factors" class="form-label">Predisposing Factors: </label>
+                <input name="predisposing-factors" type="text" id="predisposing-factors" class="form-control"
+                    aria-describedby="passwordHelpBlock" required>
+            </div>
+
+            <div>
+                <h4>Onset of Illness: </h4>
+                <div class="d-flex flex-row mb-3">
+                    <div class="pe-2">
+                        <input type="radio" name="onset-of-illness" value="abrupt" id=""> Abrupt
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="onset-of-illness" value="acute" id=""> Acute
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="onset-of-illness" value="chronic" id=""> Chronic
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="onset-of-illness" value="not-known" id=""> Not known
+                    </div>
+                </div>
+                <h4>Course of Illness: </h4>
+                <div class="d-flex flex-row mb-3">
+                    <div class="pe-2">
+                        <input type="radio" name="course-of-illness" value="continuous" id=""> Continuous
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="course-of-illness" value="episodic" id=""> Episodic
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="course-of-illness" value="insidious" id=""> Insidious
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="course-of-illness" value="not-known" id=""> Not known
+                    </div>
+                </div>
+                <h4>Progress of Illness: </h4>
+                <div class="d-flex flex-row mb-3">
+                    <div class="pe-2">
+                        <input type="radio" name="progress-of-illness" value="deteriorating" id=""> Deteriorating
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="progress-of-illness" value="improving" id=""> Improving
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="progress-of-illness" value="static" id=""> Static
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="progress-of-illness" value="fluctuating" id=""> Fluctuating
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="progress-of-illness" value="not-known" id=""> Not known
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="display-5 mb-4">Negative History: </h1>
+            <div class="form-floating mb-4">
+                <textarea name="negative-history" class="form-control" placeholder="Leave a comment here"
+                    id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+
+            <h1 class="display-5 mb-4">Concomitant Changes in Biological Needs/Functions: </h1>
+            <div>
+                <h4>Appetite: </h4>
+                <div class="d-flex flex-row mb-3">
+                    <div class="pe-2">
+                        <input type="radio" name="appetite" value="normal" id=""> Normal
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="appetite" value="reduced" id=""> Reduced
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="appetite" value="increased" id=""> Increased
+                    </div>
+                </div>
+                <h4>Libido: </h4>
+                <div class="d-flex flex-row mb-3">
+                    <div class="pe-2">
+                        <input type="radio" name="libido" value="normal" id=""> Normal
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="libido" value="mildly-reduced" id=""> Mildly Reduced
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="libido" value="markedly-reduced" id=""> Markedly Reduced
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="libido" value="enhanced" id=""> Enhanced
+                    </div>
+                </div>
+                <h4>Sleep: </h4>
+                <div class="d-flex flex-row mb-3">
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="normal" id=""> Normal
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="inability-to-fall-asleep" id=""> Inability
+                        to
+                        fall asleep
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="frequent-awakening" id=""> Frequent
+                        Awakening
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="early-morning-insomnia" id=""> Early morning
+                        Insomnia
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="total-insomnia" id=""> Total Insomnia
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="reversal-of-sleep-habit" id=""> Reversal of
+                        Sleep habit
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="nightmares" id=""> Nightmares
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="night-terrors" id=""> Night terrors
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="somnolence" id=""> Somnolence
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="hypersomnia" id=""> Hypersomnia
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="sleep-talking" id=""> Sleep talking
+                    </div>
+                    <div class="pe-2">
+                        <input type="radio" name="sleep-abnormality" value="sleep-walking" id=""> Sleep walking
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="display-5 mb-4">Treatment History: </h1>
+            <div class="form-floating mb-4">
+                <textarea name="treatment-history" class="form-control" placeholder="Leave a comment here"
+                    id="floatingTextarea2" style="height: 100px"></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+
+            <h1 class="display-5 mb-4">Past Medical/Psychiatric History: </h1>
+            <textarea name="past-medical-psychiatric-history" id="floatingTextarea2" class="form-control mb-4"
+                placeholder="•Previous episodes, symptoms, duration, probably diagnoses, hospitalizations, inter-episodic functioning&#10;•Deficits (stable, Increasing)&#10;•Medication (Dosage, duration, and compliance, response, adverse effects)&#10;•Reason for poor compliance, if applicable"></textarea>
+
+            <h1 class="display-5">Family History of psychiatric and physical illnesses (upto three generations)</h1>
+            <div class="form-floating mb-4">
+                <textarea name="family-history-of-psychiatric-and-physical-illness-upto-three-generations"
+                    id="floatingTextarea2" class="form-control" placeholder=""></textarea>
+                <label for="floatingTextarea2">Comments</label>
+            </div>
+
+            <h1 class="display-5">Family Details: </h1>
+            <textarea name="family-details" id="floatingTextarea2" class="form-control mb-4"
+                placeholder="•Members living together&#10;•Earning heads and decision makers&#10;•Interpersonal relationships & communication pattern&#10;•Attitude of family towards patient's illness&#10;•Family support system&#10;•Family burden&#10;•Expressed emotions/ critical comments&#10;•Emotional over involvement&#10;•Family environment in childhood/ adolescence&#10;"></textarea>
+
+            <h1 class="display-5">Personal History: </h1>
+            <textarea name="personal-history" id="floatingTextarea2" class="form-control mb-4"
+                placeholder="•Birth and Developmental History&#10;•Birth Term: Full Term / Premature&#10;•Birth Type&#10;•Birth weight & Birth cry&#10;•Milestones: Normal / Delayed / Grossly Delayed&#10;"></textarea>
+
+            <h1 class="display-5">Educational History: </h1>
+            <textarea name="educational-history" id="floatingTextarea2" class="form-control mb-4"
+                placeholder="Highest Grade Completed, Academic Performance, Peer Relations, Any Disciplinary Problems, Participation in co-curricular activities, Hobbies and Interests"></textarea>
+
+            <h1 class="display-5">Occupational History: </h1>
+            <textarea name="occupational-history" id="floatingTextarea2" class="form-control mb-4"
+                placeholder="Started working at the age of and Any change of Jobs, Duration of Present Job"></textarea>
+
+            <h4>Work Record</h4>
+            <div class="d-flex flex-row mb-3">
+                <div class="pe-2">
+                    <input type="radio" name="work-record" value="good" id=""> Good
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="work-record" value="satisfactory" id=""> Satisfactory
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="work-record" value="unsatisfactory" id=""> Unsatisfactory
+                </div>
+            </div>
+
+            <h4>Has the patient been working in the past 1 year/6 months?</h4>
+            <div class="d-flex flex-row mb-3">
+                <div class="pe-2">
+                    <input type="radio" name="working-in-past-1year-or-6months" value="yes" id=""> Yes
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="working-in-past-1year-or-6months" value="no" id=""> No
+                </div>
+            </div>
+
+            <h1 class="display-5">Sexual History: </h1>
+            <textarea name="sexual-history" id="floatingTextarea2" class="form-control mb-4"
+                placeholder="Adolescent sexual Activity, Knowledge, attitude towards sex, enquire for any abuse, practices and deviances"></textarea>
+
+            <h1 class="display-5 mb-2">Marital History: </h1>
+            <h4>Marital Status: </h4>
+            <div class="d-flex flex-row mb-3">
+                <div class="pe-2">
+                    <input type="radio" name="marital-history" value="unmarried" id=""> Unmarried
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="marital-history" value="married" id=""> Married
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="marital-history" value="separated" id=""> Separated
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="marital-history" value="divorced" id=""> Divorced
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="marital-history" value="widow" id=""> Widow
+                </div>
+            </div>
+
+            <div class="form-outline mb-4" style="width: 22rem;">
+                <h4>Age at Marriage: </h4>
+                <input name="age-at-marriage" type="number" id="typeNumber" class="form-control" placeholder="Enter number" />
+            </div>
+            
+            <h4>Parental Consent: </h4>
+            <div class="d-flex flex-row mb-3">
+                <div class="pe-2">
+                    <input type="radio" name="parental-consent" value="yes" id=""> Yes
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="parental-consent" value="no" id=""> No
+                </div>
+            </div>
+            
+            <div class="form-outline mb-4" style="width: 22rem;">
+                <h4>Spouse's Age at Marriage: </h4>
+                <input name="spouse-age-at-marriage" type="number" id="typeNumber" class="form-control" placeholder="Enter number" />
+            </div>
+
+            <h4>Consanguineous: </h4>
+            <div class="d-flex flex-row mb-3">
+                <div class="pe-2">
+                    <input type="radio" name="consanguineous" value="yes" id=""> Yes
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="consanguineous" value="no" id=""> No
+                </div>
+            </div>
+
+            <div class="d-flex flex-row mb-3">
+                <label for="name" class="form-label me-2">Spouse's education: </label>
+                <input name="spouse-education" type="text" id="name" class="form-control me-4" aria-describedby="passwordHelpBlo"
+                    required>
+                <label for="name" class="form-label me-2">Spouse's occupation: </label>
+                <input name="spouse-occupation" type="text" id="name" class="form-control me-4" aria-describedby="passwordHelpBlo"
+                    required>
+            </div>
+
+            <h4>Marital Adjustment: </h4>
+            <div class="d-flex flex-row mb-3">
+                <div class="pe-2">
+                    <input type="radio" name="marital-adjustment" value="good" id=""> Good
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="marital-adjustment" value="satisfactory" id=""> Satisfactory
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="marital-adjustment" value="unsatisfactory" id=""> Unsatisfactory
+                </div>
+            </div>
+            
+            <h4>Sexual Adjustment: </h4>
+            <div class="d-flex flex-row mb-3">
+                <div class="pe-2">
+                    <input type="radio" name="sexual-adjustment" value="good" id=""> Good
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="sexual-adjustment" value="satisfactory" id=""> Satisfactory
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="sexual-adjustment" value="unsatisfactory" id=""> Unsatisfactory
+                </div>
+            </div>
+
+            <h4>Extra Marital Relations: </h4>
+            <div class="d-flex flex-row mb-3">
+                <div class="pe-2">
+                    <input type="radio" name="extra-marital-relations" value="yes" id=""> Yes
+                </div>
+                <div class="pe-2">
+                    <input type="radio" name="extra-marital-relations" value="no" id=""> No
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-success mb-4">Submit</button>
+        </div>
+    </form>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details Form</title>
+</head>
+<body>
+    <h1>Personal Details</h1>
+    <form id="detailsForm">
+        <fieldset>
+            <legend>Details</legend>
+            <label for="name">Name: </label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="age">Age: </label>
+            <input type="number" id="age" name="age" required><br>
+            <label for="number">Phone Number: </label>
+            <input type="tel" id="number" name="number" required><br>
+            <label for="address">Address: </label>
+            <textarea id="address" name="address" rows="4" cols="50" required></textarea><br>
+        </fieldset>
+        <button type="submit">Submit</button>
+
+        <textarea name="foo" placeholder="hello you&#10;Second line&#10;Third line"></textarea>
+    </form>
+
+    <script>
+        const form = document.getElementById('detailsForm');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            fetch('/test-result', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+                .then(resp => resp.json())
+                .catch(err => console.error(err))
+
+            // Send the FormData object to the backend (replace with your backend logic)
+            console.log("Sending FormData to backend:", formData);
+            // Replace with your logic to send data using fetch or other methods
+        });
+    </script>
+</body>
+</html>
