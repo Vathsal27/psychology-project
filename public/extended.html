@@ -4,20 +4,19 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Patient Form</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 
 <body>
-    <form action="" method="post">
+    <form method="post" id="detailsForm">
         <div class="mx-4 px-4">
             <h1 class="display-5 mb-4 pt-2">Sociodemographic Profile</h1>
 
             <div class="mb-4 mt-2">
                 <label for="name" class="form-label">Name: </label>
-                <input name="name" type="text" id="name" class="form-control" aria-describedby="passwordHelpBlo"
-                    required>
+                <input name="name" type="text" id="name" class="form-control" aria-describedby="passwordHelpBlo">
                 <!-- <div id="passwordHelpBlock" class="form-text">
                     Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special
                     characters, or emoji.
@@ -26,8 +25,8 @@
 
             <div class="mb-4">
                 <label for="father" class="form-label">Father/Husband's Name: </label>
-                <input name="father/husbad-name" type="text" id="father" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                <input name="father-or-husband-name" type="text" id="father" class="form-control"
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <div class="form-outline mb-4" style="width: 22rem;">
@@ -51,37 +50,37 @@
             <div class="mb-4">
                 <label for="education" class="form-label">Education: </label>
                 <input name="education" type="text" id="education" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <div class="mb-4">
                 <label for="occupation" class="form-label">Occupation: </label>
                 <input name="occupation" type="text" id="occupation" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <div class="mb-4">
                 <label for="religion" class="form-label">Religion: </label>
                 <input name="religion" type="text" id="religion" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <div class="mb-4">
                 <label for="Residence" class="form-label">Residence: </label>
                 <input name="Residence" type="text" id="Residence" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <div class="mb-4">
                 <label for="language" class="form-label">Language Spoken: </label>
                 <input name="language" type="text" id="language" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <div class="mb-4">
                 <label for="admission" class="form-label">Type of Admission: </label>
                 <input name="admission" type="text" id="admission" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <h1 class="display-5">Proforma:</h1>
@@ -120,19 +119,19 @@
             <div class="mb-4">
                 <label for="precipitating-factors" class="form-label">Precipitating Factors: </label>
                 <input name="precipitating-factors" type="text" id="precipitating-factors" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <div class="mb-4">
                 <label for="perpetuating-factors" class="form-label">Perpetuating Factors: </label>
                 <input name="perpetuating-factors" type="text" id="perpetuating-factors" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <div class="mb-4">
                 <label for="predisposing-factors" class="form-label">Predisposing Factors: </label>
                 <input name="predisposing-factors" type="text" id="predisposing-factors" class="form-control"
-                    aria-describedby="passwordHelpBlock" required>
+                    aria-describedby="passwordHelpBlock">
             </div>
 
             <div>
@@ -351,9 +350,10 @@
 
             <div class="form-outline mb-4" style="width: 22rem;">
                 <h4>Age at Marriage: </h4>
-                <input name="age-at-marriage" type="number" id="typeNumber" class="form-control" placeholder="Enter number" />
+                <input name="age-at-marriage" type="number" id="typeNumber" class="form-control"
+                    placeholder="Enter number" />
             </div>
-            
+
             <h4>Parental Consent: </h4>
             <div class="d-flex flex-row mb-3">
                 <div class="pe-2">
@@ -363,10 +363,11 @@
                     <input type="radio" name="parental-consent" value="no" id=""> No
                 </div>
             </div>
-            
+
             <div class="form-outline mb-4" style="width: 22rem;">
                 <h4>Spouse's Age at Marriage: </h4>
-                <input name="spouse-age-at-marriage" type="number" id="typeNumber" class="form-control" placeholder="Enter number" />
+                <input name="spouse-age-at-marriage" type="number" id="typeNumber" class="form-control"
+                    placeholder="Enter number" />
             </div>
 
             <h4>Consanguineous: </h4>
@@ -381,11 +382,11 @@
 
             <div class="d-flex flex-row mb-3">
                 <label for="name" class="form-label me-2">Spouse's education: </label>
-                <input name="spouse-education" type="text" id="name" class="form-control me-4" aria-describedby="passwordHelpBlo"
-                    required>
+                <input name="spouse-education" type="text" id="name" class="form-control me-4"
+                    aria-describedby="passwordHelpBlo">
                 <label for="name" class="form-label me-2">Spouse's occupation: </label>
-                <input name="spouse-occupation" type="text" id="name" class="form-control me-4" aria-describedby="passwordHelpBlo"
-                    required>
+                <input name="spouse-occupation" type="text" id="name" class="form-control me-4"
+                    aria-describedby="passwordHelpBlo">
             </div>
 
             <h4>Marital Adjustment: </h4>
@@ -400,7 +401,7 @@
                     <input type="radio" name="marital-adjustment" value="unsatisfactory" id=""> Unsatisfactory
                 </div>
             </div>
-            
+
             <h4>Sexual Adjustment: </h4>
             <div class="d-flex flex-row mb-3">
                 <div class="pe-2">
@@ -424,12 +425,33 @@
                 </div>
             </div>
 
-            <button type="submit" class="btn btn-success mb-4">Submit</button>
+            <button type="submit" onclick="submitForm()" class="btn btn-success mb-4">Submit</button>
         </div>
     </form>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <script>
+        const form = document.getElementById('detailsForm');
+        form.addEventListener('submit', (event) => {
+            event.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData.entries());
+
+            fetch('/result', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(data)
+            })
+                .then(resp => resp.json())
+                .catch(err => console.error(err))
+
+            // Send the FormData object to the backend (replace with your backend logic)
+            console.log("Sending FormData to backend:", formData);
+            // Replace with your logic to send data using fetch or other methods
+        });
+    </script>
 </body>
 
 </html>
